@@ -1,0 +1,241 @@
+.pipeline-wrapper {
+    margin: 1.8302vw;
+    margin-bottom: 0;
+    position: relative;
+    height: calc(99% - 1.83vw);
+
+    .pipeline-page-title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.7569vw;
+        line-height: 2.1229vw;
+        margin-bottom: 1.8301vw;
+        color: #444444;
+    }
+
+    .pipeline-page-header {
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        .left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .submit-button {
+                padding-left: 1.90336vw;
+                padding-right: 1.8301vw;
+            }
+
+            .layout-options {
+                display: flex;
+                flex-direction: row;
+                margin-right: 1.464vw;
+
+                .pipeline-projects-box {
+                    svg {
+                        width: 1.0739vw;
+                        path{
+                            stroke: #444444;
+                        }
+                    }
+
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0.927vw;
+                    align-items: center;
+
+                    border: 0.0366vw solid #8F8F8F;
+                    border-radius: 0.1464vw 0 0 0.1464vw;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        background: #E2E2E2;
+                    }
+                }
+
+                .pipeline-projects-list {
+                    svg {
+                        width: 1.3177vw;
+                        path{
+                            stroke: #444444;
+                        }
+                    }
+
+                    align-items: center;
+
+                    display: flex;
+                    flex-direction: row;
+                    padding: 1.02489vw 0.805vw;
+
+                    border: 0.0366vw solid #8F8F8F;
+                    border-left: none;
+                    border-right: none;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        background: #E2E2E2;
+                    }
+                }
+
+                .pipeline-projects-forcast {
+                    svg {
+                        width: 1.6105vw;
+                        path{
+                            stroke: #6e6e6e;
+                        }
+                    }
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0.6588vw;
+
+                    border: 0.0366vw solid #8F8F8F;
+                    border-radius: 0 0.1464vw 0.1464vw 0;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        background: #E2E2E2;
+                    }
+                }
+
+                .active {
+                    background: #E2E2E2;
+                }
+            }
+        }
+
+        .middle {
+
+            .projects-info {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.1713vw;
+                line-height: 1.3909vw;
+                color: #444444;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: row;
+
+            .pipeline-dropdown {
+                margin-right: 0.73206vw;
+            }
+
+            .user-dropdown {
+                .icon {
+                    margin-right: 0.5124vw;
+                }
+            }
+        }
+    }
+
+    .projects-section {
+        height: 54.95vh;
+       width: 73.39vw;
+        margin-top: 3.660vw;
+        overflow: scroll;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 0.43847vw;
+
+        &::-webkit-scrollbar {
+            background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #949494;
+            border-radius: 1.464vw;
+            border: 6px solid white
+        }
+    }
+
+    .list-section {
+        height: 21.18vw;
+    }
+
+    .pipeline-project-actions-container {
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        background: white;
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .drag-drop-section {
+            color: #fff;
+            width: 100%;
+            height: 3.47vw;
+            background: none;
+            color: #444444;
+            font-size: 1.1vw;
+            font-weight: 400;
+            border: 0.1464vw solid #4970b5;
+            border-radius: 0.73206vw;
+            padding: 0.88vw 0;
+            font-family: "Poppins", sans-serif;
+            transition: 0.4s ease;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0;
+            width: 17.66vw;
+        }
+
+        .delete-project {
+            border: 0.1464vw solid #FA7070;
+        }
+
+        .fail-project {
+            border: 0.1464vw solid #ECD613;
+        }
+
+        .success-project {
+
+            border: 0.1464vw solid #1DB954;
+        }
+
+        .move-to-project {
+            border: 0.1464vw solid #376ABE;
+        }
+
+        .delete-projectv.hovered {
+            background-color: #FA7070;
+            color: white;
+        }
+
+        .success-project.hovered {
+            background-color: #1DB954;
+            color: white;
+        }
+
+        .move-to-project.hovered {
+            background-color: #376ABE;
+            color: white;
+        }
+
+        .fail-project.hovered {
+            background-color: #ECD613;
+            color: white;
+        }
+    }
+
+    .show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

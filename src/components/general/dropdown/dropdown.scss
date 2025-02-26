@@ -1,0 +1,174 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 2.928vw;
+
+    .dropdown-header {
+
+        display: flex;
+        flex-direction: row;
+        padding: 1vw;
+        align-items: center;
+        justify-content: space-between;
+        // border: 0.0366vw solid #444444;
+        border: 0.0366vw solid #8f8f8f;
+
+        border-radius: 0.366vw;
+        height: 2.928vw;
+
+        .dropdown-header-main-icon {
+            display: flex;
+
+            height: 1.3177vw;
+            // margin-right: 2.17vw;
+
+            svg {
+                width: 1.0739vw;
+            }
+        }
+
+        .selected-option {
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.1713vw;
+            line-height: 1.39vw;
+            color: #444444;
+            width: 10vw;
+            text-align: center;
+            margin: 0 0.5vw;
+            // padding: 0.805vw 0 0.73vw;
+        }
+
+        .dropdown-header-icon {
+            justify-content: center;
+            // margin-left: 2.34vw;
+            display: flex;
+            // margin-right: 1.24vw;
+            align-items: center;
+
+            svg {
+                width: 0.645vw;
+            }
+        }
+    }
+
+    .dropdown-options-container {
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+
+        border-radius: 0 0 1.464vw 1.464vw;
+        width: 100%;
+        display: flex;
+        background: #FFFFFF;
+        box-shadow: 0.366vw 0.29vw 1.098vw rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+
+        .dropdown-main-options {
+
+            border-bottom: 0.0366vw solid #444444;
+            padding: 0.732vw 1.1237vw 0.732vw 0.732vw;
+
+            .selected-option {
+                margin-bottom: 1.098vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .selected-option-text {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.1713vw;
+                    line-height: 1.39vw;
+
+                    color: #444444;
+
+                }
+
+                .selected-option-icon {
+                    width: 0.994vw;
+                    height: 0.733vw;
+                }
+
+                div {
+                    font-family: "Inter";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.1713vw;
+                    line-height: 1.39vw;
+                    align-items: center;
+                    color: #444444;
+
+                }
+            }
+
+            .dropdown-options {
+                font-family: 'Inter';
+                font-style: normal;
+                padding: 0.1464vw;
+                font-weight: 400;
+                font-size: 1.1713vw;
+                line-height: 1.39vw;
+                cursor: pointer;
+                color: #444444;
+            }
+        }
+
+        .dropdown-actions-options {
+
+            .dropdown-action-option {
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                padding: 0.549vw 0.732vw;
+
+                .dropdown-action-option-icon {
+                    padding-right: 1.244vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    svg {
+                        width: 1.0248vw;
+                        height: 1.0248vw;
+                    }
+                }
+
+                .dropdown-action-option-text {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.1713vw;
+                    line-height: 1.39vw;
+                    color: #444444;
+                    cursor: pointer;
+                }
+            }
+
+            >:last-child {
+                padding-bottom: 1.0248vw;
+                ;
+            }
+
+            >:first-child {
+                padding-top: 1.0248vw;
+
+            }
+        }
+    }
+
+    .dropdown-options-container.open {
+        max-height: 14.37vw;
+    }
+}

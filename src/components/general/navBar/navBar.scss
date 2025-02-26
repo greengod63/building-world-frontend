@@ -1,0 +1,96 @@
+.navbar {
+  height: 100vh;
+
+  width: 23vw;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.15);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0;
+    justify-content: center;
+
+    .navbar-head-text {
+      font-size: 1.5vw;
+      color: #4970b5;
+      font-weight: 500;
+    }
+
+    svg {
+      display: block;
+      width: 4.14vw;
+      height: 6.14vw;
+    }
+
+    .navnar-company-avatar-container img {
+      width: 7.14vw;
+      height: 7.14vw;
+
+      border-radius: 50%;
+    }
+
+  }
+
+  .navbar-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .navbar-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .logout-button {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 3.1vw 0 3.1vw 3vw;
+      border-radius: 0 15px 15px 0;
+      transition: .3s ease-out all;
+      width: 100%;
+
+      p {
+        color: #4970b5;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        margin-left: 1.3vw;
+        font-size: 1.15vw;
+      }
+
+      svg {
+        display: block;
+        width: 2.71vw;
+      }
+
+      &:hover {
+        background-color: #4970B5;
+
+        p {
+          color: #fff;
+        }
+
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

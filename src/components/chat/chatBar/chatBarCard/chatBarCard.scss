@@ -1,0 +1,69 @@
+.chat-card-container {
+  width: 25.625vw;
+  height: 7.63vw;
+  padding: 1.39vw 2vw;
+  display: flex;
+  align-items: center;
+  transition: all ease 0.3s;
+
+  .chat-card-avatar-container {
+    width: 4.16vw;
+    height: 4.16vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg, img{
+      width: 4.16vw;
+      height: 4.16vw;
+    }
+  }
+
+  .chat-card-information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 11.8vw;
+    height: 3.47vw;
+    margin: 0 2vw;
+    
+    .name {
+      width: 100%;
+      font-size: 1.11vw;
+      line-height: 1.64vw;
+      color: #444444;
+      font-weight: 600;
+    }
+
+    .chat-card-message-container {
+      width: 100%;
+
+      .message {
+        font-size: 0.97vw;
+        line-height: 1.45vw;
+        width: 100%;
+
+      }
+    }
+  }
+
+  .notifications-container{
+    width: 1.52vw;
+    height: 1.52vw;
+    border-radius: 50%;
+    background: #F61D1D99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .notifications {
+      font-size: 0.83vw;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+
+  &:hover{
+    background: #F7F7F7;
+  }
+}

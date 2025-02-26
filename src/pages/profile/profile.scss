@@ -1,0 +1,100 @@
+.profile-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .profile-container {
+    width: 47.5vw;
+    height: 34.97vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .profile-user-data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1.5625vw 0vw 2.5625vw 0vw;
+      ;
+
+      .profile-user-data-firstLastName {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.3020833333333333vw;
+        line-height: 1.953125vw;
+        color: #444444;
+      }
+
+      .profile-user-data-position {
+        font-family: 'Poppins';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.0416666666666667vw;
+        line-height: 1.5625vw;
+        color: #444444;
+      }
+    }
+
+    .profile-url-container {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        width: 4.90625vw;
+        height: 4.90625vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .profile-url {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          background-color: #376ABE;
+        }
+
+        button {
+          position: absolute;
+          top: 11vw;
+          left: 63vw;
+          background-color: #4272C0;
+          border: none;
+          width: 1.08vw;
+          height: 1.08vw;
+          border-radius: 99px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          svg {
+            width: 60%;
+            height: 60%;
+          }
+        }
+      }
+
+      .name {
+        font-size: 1.38vw;
+        font-weight: 500;
+        color: #444444;
+      }
+
+      .position {
+        font-size: 1.11vw;
+        color: #444444;
+      }
+    }
+
+    .profile-inputs-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

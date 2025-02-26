@@ -1,0 +1,28 @@
+.reply-banner-container{
+    display: flex;
+    align-items: center;
+    background: #CEDFFB;
+    height: 5.55vw;
+    width: 100%;
+
+    .reply-banner-side-line{
+        background: #1E357C;
+        min-width: 0.7vw;
+        height: 100%;
+    }
+
+    .reply-banner-text-container{
+        margin-left: 0.7vw;
+        width: 90%;
+        p{
+            color: #444444;
+            width: 100%;
+        }
+
+        .reply-banner-name{
+            font-size: 1.11vw;
+            font-weight: 600;
+        }
+    }
+
+}

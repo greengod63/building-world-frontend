@@ -1,0 +1,39 @@
+.audio-recording-wrapper{
+  width: 33.445313vw;
+  overflow: hidden;
+  position: relative;
+  height: 1.953125vw;
+  display: flex;
+  align-items: center;
+}
+.audio-recording-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transition: transform 0.2s ease-out;
+ }
+.delete-audio-message {
+  background-color: #E3494C;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5859375vw 0vw 0vw 0.5859375vw;
+  width: 2.6692708333vw;
+  justify-content: center;
+}
+.delete-audio-message svg {
+  height: 1.3671875vw;
+  width: 1.2369791666666667vw;
+}
+.recording-audio-button svg {
+  width: 2.6692708333333335vw;
+  height: 2.6692708333333335vw;
+}
+.recording-audio-button {
+  margin-left: 1.6276041667vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

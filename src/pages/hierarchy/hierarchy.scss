@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+
+
+.hierarchy {
+    width: 100%;
+    padding-inline: 0;
+    font-family: 'Poppins', 'Sans';
+
+    .hierarchy-horizontal-container {
+        display: flex;
+        align-items: center;
+        width: 70.2vw;
+        height: 70vh;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: scroll;
+    }
+
+    .hierarchy-vertical-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 95%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 0 0.8vw;
+        min-width: 24.7vw;
+
+        .hierarchy-hire-worker-button {
+            margin-top: 2vw;
+            cursor: pointer;
+
+            svg {
+                width: 1.7vw;
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        height: 0.69vw;
+        width: 0.69vw;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 0.69vw;
+        background: #D9D9D9;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0.69vw;
+        background: #949494;
+        border: none;
+    }
+}

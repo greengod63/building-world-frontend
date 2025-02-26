@@ -1,0 +1,29 @@
+.selectable-card {
+    display: flex;
+    width: 18vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    .selectable-card-info {
+        display: flex;
+        align-items: center;
+
+        .selectable-card-avatar {
+            width: 2.78vw;
+            height:  2.78vw;
+        }
+        
+        .selectable-card-name{
+            margin-left: 1.39vw;
+        }
+    }
+
+    .check-box {
+
+        display: flex;
+        justify-content: center;
+
+    }
+}

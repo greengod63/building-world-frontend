@@ -1,0 +1,66 @@
+.project-card {
+    display: flex;
+    flex-direction: row;
+    width: 17.057vw;
+    height: 8.78477vw;
+    background: #FAFAFA;
+    box-shadow: 0.2196vw 0.1464vw 0.732vw rgba(0, 0, 0, 0.1);
+    padding: 1.09809vw;
+    margin: 0.732vw 0;
+
+    .project-info {
+        gap: 0.366vw;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.1713vw;
+            line-height: 1.3909vw;
+            color: #000000;
+        }
+
+        .organisation {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.02489vw;
+            line-height: 1.2445vw;
+            color: #444444;
+        }
+
+        .amount {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.02489vw;
+            line-height: 1.2445vw;
+            color: #444444;
+        }
+    }
+
+    .project-actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .forward-icon {
+
+            display: flex;
+            width: 1.806vw;
+            height: 1.806vw;
+            background: #376ABE;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            
+            svg {
+                width: 0.407vw;
+                height: 0.7137vw;
+            }
+        }
+    }
+}

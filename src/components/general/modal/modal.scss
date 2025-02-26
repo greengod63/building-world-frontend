@@ -1,0 +1,143 @@
+// .hide-dark-bg{
+//   position: absolute;
+//   top: 0;
+//   z-index: 9999;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   display: flex;
+//   justify-content: center;
+//   animation: fade-out ease .3s; 
+//   background-color: rgba(0, 0, 0, 0.5);
+
+//   .hide{
+//     animation: rise-up ease 1s forwards;
+//   }
+
+// }
+
+.hiddenss{
+  // display: none;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  animation: fade-out ease .3s forwards;
+
+  .modal-container {
+    background-color: #fafafa;
+    animation: rise-up ease 1s forwards;
+    border-radius: 1.4vw;
+    padding: 2vw 0;
+    display: flex;
+    flex-direction: column;
+
+    .modal-header {
+      padding: 0 2.7vw;
+      display: flex;
+      justify-content: flex-end;
+
+      span {
+        cursor: pointer;
+        svg{
+          width: 1.5vw;
+        }
+      }
+    }
+  }
+}
+
+.dark-bg {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  animation: fade-in ease .3s;
+
+  .modal-container {
+    background-color: #fafafa;
+    animation: drop ease 1s forwards;
+    border-radius: 1.4vw;
+    padding: 2vw 0;
+    display: flex;
+    flex-direction: column;
+
+    .modal-header {
+      padding: 0 2.7vw;
+      display: flex;
+      justify-content: flex-end;
+
+      span {
+        cursor: pointer;
+        svg{
+          width: 1.5vw;
+        }
+      }
+    }
+  }
+}
+
+.modal.modal-animate {
+  opacity: 1;
+  transition: ease-in-out 5s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes drop {
+  0% {}
+
+  70% {
+    transform: translateY(16.7948717948718vh);
+  }
+
+  100% {
+    transform: translateY(14.7948717948718vh);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes rise-up {
+  0% {
+    transform: translateY(14.7948717948718vh);
+
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.close-animate {
+  animation: fade-out ease .3s;
+}

@@ -1,0 +1,100 @@
+.chat-info-slider{
+    background: #F6F6F6;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 26.39vw;
+
+    .chat-info-slider-container{
+        background: #fff;
+        margin-bottom: 0.97vw;
+        padding: 1.75vw 1.25vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .chat-info-slider-header-avatar{
+            width: 15.28vw;
+            height: 15.28vw;
+            border-radius: 50%;
+
+            img, svg{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+        .chat-info-slider-header-text-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .chat-info-slider-header-title{
+                font-size: 1.53vw;
+                font-weight: 600;
+            }
+
+            .chat-info-slider-header-subtitle{
+                font-size: 1.25vw;
+                font-weight: 500;
+                margin-top: 0.83vw;
+            }
+        }
+
+        .chat-info-slider-text{
+            width: 100%;
+            overflow: visible;
+            white-space: inherit;
+            font-size: 1.11vw;
+            color: #575757;
+            font-weight: 400;
+        }
+
+        .chat-info-slider-more-data-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            cursor: pointer;
+
+            .chat-info-slider-more-data-arrow{
+                width: 0.9vw;
+                height: 1.8vw;
+                fill: #444444;
+                margin-left: 0.83vw;
+            }
+
+            .chat-info-slider-more-data-arrow-container{
+                width: fit-content;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+
+        .more-media-data-container{
+            margin-top: 1.52vw;
+        }
+
+        .chat-info-slider-participants-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 1.39vw;
+
+            .chat-info-slider-participants-search{
+                width: 1.11vw;
+                height: 1.11vw;
+                cursor: pointer;
+            }
+        }
+
+        .chat-info-slider-participants-container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+}

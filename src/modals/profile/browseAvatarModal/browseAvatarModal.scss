@@ -1,0 +1,95 @@
+.browse-avatar {
+  width: 52.828125vw;
+  height: fit-content !important;
+
+  .browse-avatar-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6.2552083333333335vw 3.2552083333333335vw 6.2552083333333335vw 0vw;
+
+    .dropped-img {
+      width: 18.301vw;
+      height: 19.04585234375vw;
+
+      margin: 1.8301vw;
+
+    }
+
+    .drop-image {
+      cursor: pointer;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border: 1px dashed #4970B5;
+      padding: 3.8799414348462666vw;
+
+      .drop-image-text {
+
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.171303074670571vw;
+        line-height: 1.7569546120058566vw;
+
+
+        color: #444444;
+      }
+    }
+
+    .or {
+
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.171303074670571vw;
+      line-height: 1.7569546120058566vw;
+
+
+      color: #000000;
+
+    }
+
+    .browse-file-input {
+
+      .input-field-container {
+        display: none;
+      }
+
+      .browse-input {
+        cursor: pointer;
+        border: 2px solid transparent;
+        display: block;
+        padding: 0.6094678552133982vw 2.342606149341142vw;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.171303074670571vw;
+        line-height: 1.7569546120058566vw;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+
+        background: #4970B5;
+        border-radius: 0.7320644216691069vw;
+
+        &:hover {
+          background: #FFFFFF;
+
+          color: #4970B5;
+          border: 2px solid #4970B5;
+
+        }
+
+
+      }
+
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.base-layout {
+    display: flex;
+
+    .base-layout-content {
+
+        flex: 1;
+
+        .base-layout-container {
+            width: 100%;
+        }
+    }
+}

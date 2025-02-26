@@ -1,0 +1,58 @@
+.message-area {
+  height: calc(100vh - 12.7vw);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 0 1.736vw;
+
+  .date-banner{
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 3vw;
+    position: absolute;
+    left: calc(50% - 6vw);
+    top: 7vw;
+    transition: all ease 0.3s;
+    opacity: 1;
+  }
+
+  .hidden-date-banner{
+    opacity: 0;
+  }
+  
+  .loading-messages .box::before {
+    background: #caddff;
+  }
+
+  .loading-messages {
+    top: 10px;
+    position: absolute;
+    left: 50%;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-color: transparent;
+    border: 3px solid transparent;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+
+  }
+}
+
+.message-area-block-scroll {
+  overflow: hidden;
+}

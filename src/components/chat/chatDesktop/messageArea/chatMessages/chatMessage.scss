@@ -1,0 +1,141 @@
+.chat-message-container {
+  width: 100%;
+  // height: 100%;
+  opacity: 1;
+  transition: all ease 0.5s;
+  display: flex;
+  // transition: all ease 0.3s;
+  // animation: appear ease 3s forwards;
+  // animation-name: appear;
+  // animation-duration: 3s;
+
+
+  .chat-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 50%;
+    padding: 0.7vw;
+    margin-bottom: 2vw;
+    border-radius: 0.35vw;
+
+    .chat-message-data-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 0.35vw;
+
+      p{
+        font-weight: 600;
+      }
+
+      .time{
+        min-width: fit-content;
+        font-size: 0.83vw;
+        margin-left: 1vw;
+      }
+
+      .chat-message-item{
+        width: 100%;
+        
+        .sender{
+          width: 100%;
+          font-size: 1.1vw;
+        }
+
+        .additional{
+          display: flex;
+          align-items: center;
+          svg{
+            margin-right: 0.486vw;
+            width: 1vw;
+            fill: rgba(255, 255, 255, 0.5);
+          }
+
+          font-size: 0.83vw;
+          font-style: italic;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.5);
+          min-width: fit-content;
+        }
+      }
+    }
+
+    .chat-message-files-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .chat-message-text{
+      font-size: 1.2vw;
+      width: 100%;
+      overflow: visible;
+      white-space: inherit;
+      padding: 0.35vw 0.7vw 0.7vw 0.7vw;
+    }
+
+    .chat-message-status{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      svg{
+        width: 1vw;
+      }
+    }
+  }
+
+  .user-message {
+    background: #4970B5;
+
+    p {
+      color: #fff;
+    }
+
+
+  }
+
+  .stranger-message {
+    background: #FAFAFA;
+
+    p {
+      color: #444;
+    }
+  }
+}
+
+.user-message-container {
+  justify-content: flex-end;
+}
+
+.stranger-message-container {
+  justify-content: flex-start;
+
+  .chat-message-avatar-container{
+    width: 4.17vw;
+    height: 4.17vw;
+    border-radius: 50%;
+    margin-right: 2vw;
+  }
+  
+  .edited{
+    color: #000;
+  }
+}
+
+.hidden-message{
+  opacity: 0;
+}
+
+
+// @keyframes appear{
+//   from{
+//     opacity: 0;
+//   }
+
+//   to{
+//     opacity: 1;
+//   }
+// }

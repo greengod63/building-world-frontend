@@ -1,0 +1,96 @@
+.copanies-list{
+    height: 56.15vh;
+    width: 52.5vw;
+  
+    .copanies-list-title{
+      font-size: 1.66vw;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 2vw;
+    }
+
+    .copanies-list-container{
+        padding: 1vw;
+        display: grid;
+        grid-template-columns: 17.36vw 17.36vw;
+        grid-row-gap: 2vw;
+        grid-column-gap: 9.375vw;
+        height: 100%;
+        margin-top: 2.17vw;
+        padding-top: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-y: scroll;
+
+        .add-company-button-container{
+            width: 17.36vw;
+            height: 5.97vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+
+            svg{
+                display: block;
+                cursor: pointer;
+                width: 3.47vw;
+            }
+        }
+
+        .company-card{
+            width: 17.36vw;
+            height: 5.97vw;
+            padding: 1.25vw 1.7vw;
+            display: flex;
+            align-items: center;
+            transition: ease 0.3s;
+            border-radius: 1vw;
+            box-shadow: 0.34vw 0.28vw 0.7vw rgba(0, 0, 0, 0.15);
+
+            .company-avatar{
+                border-radius: 50%;
+                width: 2.78vw;
+                height: 2.78vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all ease 0.3s;
+
+                img, svg{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            .company-data{
+                margin-left: 3.47vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .company-name{
+                    font-size: 1.11vw;
+                    font-weight: 500;
+                }
+
+                .company-description{
+                    font-size: 1.11vw;
+                    font-style: italic;
+                }
+            }
+
+            &:hover{
+                background: #4970B5;
+                box-shadow: none;
+                color: #fff;
+                .company-avatar{
+                    background: #fff;
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    
+    }
+}

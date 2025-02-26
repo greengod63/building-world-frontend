@@ -1,0 +1,84 @@
+
+.hire-worker{
+
+  max-height: 72.65vh;
+  width: 50.41vw;
+
+  .hire-worker-title{
+    font-size: 1.66vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2vw;
+  }
+
+  .hire-worker-form{
+    padding: 0 3.125vw 1.47vw;
+    min-height: calc(100% - 4.5vw);
+    max-height: calc(100% - 4.5vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .hire-worker-content-container{
+      overflow-y: scroll;
+      height: 100%;
+      padding: 2vw 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .hire-worker-content-input-container{
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        grid-template-rows: 4.16vw 4.16vw;
+        grid-row-gap: 1.5vw;
+        grid-column-gap: 2.5vw;
+        width: 100%;
+
+        label{
+          font-size: 1.13vw;
+        }
+        .input-field-container{
+          width: 100%;
+          height: 2.5vw;
+          input{
+            font-size: 0.95vw;
+          }
+        }
+        
+      }
+      
+      .hire-worker-functions{
+        margin-top: 2.7vw;
+
+        .hire-worker-functions-title{
+          display: flex;
+          justify-content: center;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 1.66vw;
+        }
+
+        .hire-work-functions-checkbox-container{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 3.82vw;
+          grid-column-gap: 13.9vw;
+          grid-row-gap: 2.8vw;
+        }
+      }
+      
+    }
+
+    .hire-worker-submit-container{
+      margin-top: 2.125vw;
+      width: 10.42vw;
+      height: 3.5vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

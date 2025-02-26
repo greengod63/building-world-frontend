@@ -1,0 +1,30 @@
+.move-worker{
+    width: 52.43vw;
+    height: 33.68vw;
+
+    .move-worker-container{
+        padding: 0 3.82vw 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .move-worker-search-container{
+            height: 3.125vw;
+            width: 32.63vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .move-worker-new-leaders-list{
+            margin-top: 2vw;
+            padding: 2vw 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-row-gap: 2vw;
+            height: 21.87vw;
+            overflow: scroll;
+
+        }
+    }
+}

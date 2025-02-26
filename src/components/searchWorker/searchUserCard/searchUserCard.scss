@@ -1,0 +1,45 @@
+.search-user-card{
+    width: 36%;
+    height: 21.1%;
+    background: #FEFEFE;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 1.46484375vmin;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .search-user-card-wrapper{
+        width: 82%;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .search-user-card-img-conatiner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            width: 4.90625vmin ;
+            height: 4.90625vmin;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+
+        .search-user-card-text-container{
+            width: 60.78%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .search-user-card-text{
+                font-size: 1.11vmax;
+                font-weight: 400;
+                line-height: 1.66vmax;
+                color: #444444;
+            }
+        }
+    }
+
+}

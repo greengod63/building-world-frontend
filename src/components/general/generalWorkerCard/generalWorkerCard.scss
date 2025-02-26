@@ -1,0 +1,36 @@
+.worker-card{
+    width: 17.36vw;
+    height: 5.97vw;
+    padding: 1.18vw 1.18vw 1.18vw 1.6vw;
+    display: flex;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+    .worker-card-img{
+        width: 2.78vw;
+        height: 2.78vw;
+    }
+
+    .worker-card-info{
+        margin-left: 3.125vw;
+        width: 7.99vw;
+    }
+
+    &:not(.worker-card-placeholder):hover{
+        background: #4970B5;
+        color: #fff;
+        box-shadow: none;
+    }
+}
+
+.worker-card-placeholder{
+    background: #444444;
+    color: #fff;
+
+}

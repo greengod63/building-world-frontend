@@ -1,0 +1,36 @@
+.pipeline-projects-container {
+    height: 88%;
+    // width: 17.309663250366032vw;
+
+    .pipeline-header-title {
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.464vw;
+        line-height: 1.7569vw;
+        color: #444444;
+
+    }
+
+    .pipeline-project-info {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.02489vw;
+        line-height: 1.2445vw;
+        color: #444444;
+    }
+
+    .pipeline-projects {
+        height: 91%;
+        overflow: scroll;
+        margin-top: 1.47vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        >:first-child {
+            margin-top: 0
+        }
+    }
+}

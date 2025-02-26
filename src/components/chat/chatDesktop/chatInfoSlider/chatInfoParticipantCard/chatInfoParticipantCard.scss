@@ -1,0 +1,19 @@
+.chat-info-slider-participant-card-container{
+    display: flex;
+    align-items: center;
+    padding: 1vw 1.25vw;
+    width: 100%;
+
+    .chat-info-slider-particioant-avatar{
+        width: 4.17vw;
+        height: 4.17vw;
+    }
+
+    .chat-info-slider-particioant-name{
+        margin-left: 2vw;
+        font-size: 1.1vw;
+        font-weight: 600;
+        color: #444444;
+    }
+
+}

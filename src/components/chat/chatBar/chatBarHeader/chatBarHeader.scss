@@ -1,0 +1,39 @@
+.chat-bar-header-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 26vw;
+  min-height: 6.25vw;
+  max-height: 6.25vw;
+  background-color: #eee;
+  padding-left: 0.9765625vw;
+
+  .chat-bar-header-button {
+    margin-left: 1.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 2vw;
+      height: 2.36vw;
+    }
+  }
+
+  .chat-bar-header-input {
+    all: unset;
+    padding: 0.9vw 0.6vw;
+    width: 17.447916666666668vw;
+    height: 1.325;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1.0416666667vw;
+    line-height: 1.2369791667vw;
+    background: #fff;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

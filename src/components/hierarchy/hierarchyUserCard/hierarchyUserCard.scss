@@ -1,0 +1,161 @@
+.user-card-container{
+    display: flex;
+    align-items: center;
+    width: 22.36vw;
+    min-height: 6vw;
+    max-height: 6vw;
+    padding: 1vw 0.9vw 1vw 1.4vw;
+    border-radius: 1vw;
+    transition: all ease 0.3s;
+    margin-bottom: 0.8vw;
+    cursor: pointer;
+
+    .user-card-avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-card-avatar{
+        img, svg{
+            width: 2.7vw;
+            border-radius: 50%;
+        }
+    }
+
+    .user-card-info{
+        width: 9.37vw;
+        margin-left: 2.8vw;
+
+        .user-card-info-name{
+            font-size: 0.84vw;
+        }
+
+        .user-card-info-position{
+            font-size: 0.86vw;
+            font-family: 'Poppins';
+            font-style: italic;
+        }
+    }
+
+    .user-card-functions-container{
+        margin-left: 2.8vw;
+        height: 100%;
+
+        .user-card-functions-buttons-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .user-card-functions-fire{
+                padding-left: 0.3vw;
+                cursor: pointer;
+                svg{
+                    display: flex;
+                    width: 1.3vw;
+                }
+
+            }
+
+            .user-card-functions-move{
+                width: 1.8vw;
+                height: 1.8vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #ECD613;
+                border-radius: 0.69vw;
+                cursor: pointer;
+                svg{
+                    display: block;
+                    width: 0.63vw;
+                }
+            }
+        }
+    }
+    &:hover{
+        background: #4970B5;
+        color: #fff;
+    }
+}
+
+.user-card-container-active{
+    background: #4970B5;
+    color: #fff;
+}
+
+.user-card-container-placeholder{
+    background: #444444;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 22.36vw;
+    min-height: 6vw;
+    max-height: 6vw;
+    padding: 1vw 0.9vw 1vw 1.4vw;
+    border-radius: 1vw;
+    transition: all ease 0.3s;
+    margin-bottom: 0.8vw;
+    cursor: pointer;
+
+    .user-card-avatar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .user-card-avatar{
+        img, svg{
+            width: 2.7vw;
+            border-radius: 50%;
+        }
+    }
+
+    .user-card-info{
+        width: 9.37vw;
+        margin-left: 2.8vw;
+
+        .user-card-info-name{
+            font-size: 0.84vw;
+        }
+
+        .user-card-info-position{
+            font-size: 0.86vw;
+            font-family: 'Poppins';
+            font-style: italic;
+        }
+    }
+
+    .user-card-functions-container{
+        margin-left: 2.8vw;
+        height: 85%;
+
+        .user-card-functions-buttons-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .user-card-functions-fire{
+                padding-left: 0.3vw;
+                cursor: pointer;
+                svg{
+                    display: flex;
+                    width: 1.3vw;
+                }
+
+            }
+
+            .user-card-functions-replace{
+                cursor: pointer;
+                svg{
+                    display: block;
+                    width: 1.1vw;
+                }
+            }
+        }
+    }
+}

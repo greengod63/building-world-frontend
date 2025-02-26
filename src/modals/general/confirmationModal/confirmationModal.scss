@@ -1,0 +1,24 @@
+.confirmation-modal{
+    width: 37.5vw;
+    height: 16.8vw;
+    padding: 2.22vw 4vw 3.2vw !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .confirmation-modal-title{
+        font-size: 1.66vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .confirmation-modal-buttons{
+        display: flex;
+        justify-content: space-between;
+
+        button{
+            width: 7.92vw;
+            height: 2.78vw;
+        }
+    }
+}

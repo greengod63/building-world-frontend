@@ -1,0 +1,20 @@
+.chat-desktop{
+    display: flex;
+    flex-direction: column;
+    width: 50.68vw;
+    height: 100vh;
+    background: #CADDFF;
+
+    .chat-desktop-container{
+        height: calc(100% - 6.25vw);
+        display: flex;
+
+        .chat-desktop-message-area-container{
+            height: 100%;
+            max-width: 100%;
+            transition: all ease 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

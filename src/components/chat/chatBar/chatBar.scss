@@ -1,0 +1,11 @@
+.chat-bar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .chat-bar-chats-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 26.1vw;
+  }
+}

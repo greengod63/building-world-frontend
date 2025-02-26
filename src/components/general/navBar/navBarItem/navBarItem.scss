@@ -1,0 +1,107 @@
+
+
+.navitem{
+    width: 100%;
+    background-color: #FFF;
+    color: #4970B5;
+    fill: #4970B5;
+    transition: .3s ease-out all;
+    border-radius: 0 15px 15px 0;
+    stroke:#4970B5;
+    overflow: hidden;
+
+    .navitem-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0  3vw 0 2.3vw;
+        height: 5.2vw;
+        .navitem-header-text{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+                margin-left: 1.8vw;
+                font-size: 1.1vw;
+                font-family: 'Poppins', sans-serif;
+            }
+            .navitem-header-icons{
+
+                svg{
+                    width: 2.65vw;
+                    display: block;
+
+                }
+                path{
+                    display: block;
+
+                }
+            }
+        }
+        .navitem-header-vector{
+            width: 0.6vw;
+            transition: .3s ease-out all;
+            transform: rotate(0);
+        }
+
+        .rotated{
+            transition: .3s ease-out all;
+            transform: rotate(90deg) !important;
+        }
+    }
+
+    .navitem-item-container{
+        display: flex;
+        flex-direction: column;
+
+        .navbar-link{
+            display: flex;
+            align-items: center;
+            padding: 1.2vw 0 1.2vw 7.2vw;
+            transition: .3s ease-out all;
+            svg{
+                width: 1.9vw;
+                display: block;
+            }
+
+            path{
+                display: block;
+
+            }
+
+            p{
+                color: #fff;
+                margin-left: 1.4vw;
+                font-size: 1.1vw;
+            }
+
+            &:hover{
+                background: #6F8FCC;
+            }
+        }
+    }
+
+    &:hover{
+        background-color: #4970B5;
+        color: #FFF;
+        fill: #FFF;
+        stroke: #FFF;
+        .navitem-header-vector{
+            path{
+                stroke: #FFF;
+            }
+        }   
+    }
+}
+
+.active{
+    background-color: #4970B5;
+    color: #FFF;
+    fill: #FFF;
+    stroke: #FFF;
+    .navitem-header-vector{
+        path{
+            stroke: #FFF;
+        }
+    }  
+}

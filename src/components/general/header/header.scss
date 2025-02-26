@@ -1,0 +1,21 @@
+.header-container{
+    padding: 1.38vw 3.47vw;
+    display: flex;
+    justify-content: flex-end;
+
+    .img{
+        border-radius: 50%;
+        width: 4.16vw;
+    }
+
+    .navbar-link{
+        svg{
+            width: 4.16vw;
+            height: 4.16vw;
+        }
+
+        mask{
+            mask-type: alpha;
+        }
+    }
+}

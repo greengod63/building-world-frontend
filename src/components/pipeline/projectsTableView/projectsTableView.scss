@@ -1,0 +1,87 @@
+.list-project-view {
+    margin-left: -0.9516837481698389vw;
+    margin-top: 2.562225475841874vw;
+
+    .table {
+        display: table;
+        border-collapse: collapse;
+        width: 100%;
+
+        .head {
+            font-weight: bold;
+
+            // background-color: #f9f9f9;
+
+            .head-row {
+                display: table-header-group;
+                display: table-row;
+
+
+                .value {
+                    width: 10.248901903367496vw;
+                }
+
+                .title {
+                    width: 10.980966325036603vw;
+                }
+
+                .org {
+                    width: 10.248901903367496vw;
+                }
+
+                .cp {
+                    width: 11.71303074670571vw;
+                }
+
+                .ecd {
+                    width: 14.714494875549049vw;
+                }
+
+                .nad {
+                    width: 13.177159590043924vw;
+                }
+
+                .owner {
+                    width: 7.320644216691069vw;
+                }
+
+                .head-cell {
+                    display: table-cell;
+                    border: 0.07320644216691069vw solid #444444;
+                    border-bottom: none;
+                    padding: 0.7320644216691069vw;
+                    text-align: left;
+
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.171303074670571vw;
+                    line-height: 1.390922401171303vw;
+                    color: #444444;
+                }
+
+                .check-box {
+                    padding: 0.5856515373352855vw;
+
+                    .checkbox-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+            }
+        }
+
+        .body {
+            height: 16rem !important;
+            overflow: scroll;
+            margin-right: -10px;
+
+            >:last-child {
+                border-bottom: 0.07320644216691069vw solid #444444;
+            }
+        }
+    }
+}

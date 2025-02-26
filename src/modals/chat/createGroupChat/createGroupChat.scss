@@ -1,0 +1,51 @@
+.create-group-chat{
+    min-height: 77.15vh;
+    max-height: 77.15vh;
+    width: 41.67vw;
+  
+    .create-group-chat-title{
+      font-size: 1.66vw;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 1vw;
+    }
+
+    .create-group-chat-container{
+      padding: 0 1.39vw;
+      margin-top: 1.73vw;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      overflow: scroll;
+
+      .create-group-chat-input-container{
+        display: flex;
+        flex-direction: column;
+        width: 31.25vw;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 1.4vw 0;
+      }
+
+      .create-group-chat-workers-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: 2.78vw;
+        grid-row-gap: 0.69vw;
+        overflow-y: scroll;
+        margin-top: 1.4vw;
+        padding: 1.4vw 0;
+        // height: 58%;
+      }
+
+      .create-group-chat-submit-container{
+        margin-top: 1.4vw;
+        width: 10.42vw;
+        height: 3.5vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+}
